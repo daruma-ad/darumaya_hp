@@ -169,18 +169,10 @@ header .container {
   gap: 15px;
 }
 
-.logo-icon {
-  width: 50px;
+.logo-image {
   height: 50px;
-  background: var(--color-accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-text h1 {
@@ -598,23 +590,20 @@ nav a:hover {
 .shop-name {
   font-family: var(--font-heading);
   font-size: 1.75rem;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   color: white;
+}
+
+.shop-brand {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
-.shop-name::before {
-  content: '達';
-  width: 50px;
+.shop-brand .logo-image {
   height: 50px;
-  background: var(--color-accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  width: auto;
 }
 
 .info-list {
